@@ -1,0 +1,1 @@
+export { ModalCostPrice } from './ModalCostPrice';

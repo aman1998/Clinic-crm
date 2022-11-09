@@ -1,0 +1,1 @@
+export { ModalDocumentTemplate } from './ModalDocumentTemplate';

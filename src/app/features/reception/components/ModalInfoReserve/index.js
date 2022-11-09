@@ -1,0 +1,1 @@
+export { ModalInfoReserve } from './ModalInfoReserve';

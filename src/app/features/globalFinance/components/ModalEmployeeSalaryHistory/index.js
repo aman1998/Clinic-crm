@@ -1,0 +1,1 @@
+export { ModalEmployeeSalaryHistory } from './ModalEmployeeSalaryHistory';

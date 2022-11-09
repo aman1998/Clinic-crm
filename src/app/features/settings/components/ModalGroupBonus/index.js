@@ -1,0 +1,1 @@
+export { ModalGroupBonus } from './ModalGroupBonus';

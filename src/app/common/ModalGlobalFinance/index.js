@@ -1,0 +1,1 @@
+export { ModalGlobalFinance } from './ModalGlobalFinance';

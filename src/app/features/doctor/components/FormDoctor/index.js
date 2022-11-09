@@ -1,0 +1,1 @@
+export { FormDoctor } from './FormDoctor';

@@ -1,0 +1,1 @@
+export { ModalHospitalReception } from './ModalHospitalReception';

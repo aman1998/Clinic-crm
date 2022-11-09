@@ -1,0 +1,1 @@
+export { ModalReceive } from './ModalReceive';

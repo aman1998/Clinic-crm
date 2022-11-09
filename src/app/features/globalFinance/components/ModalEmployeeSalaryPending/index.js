@@ -1,0 +1,1 @@
+export { ModalEmployeeSalaryPending } from './ModalEmployeeSalaryPending';

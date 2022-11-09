@@ -1,0 +1,1 @@
+export { ListPatientHospital } from './ListPatientHospital';

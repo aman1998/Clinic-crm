@@ -1,0 +1,1 @@
+export { ModalLaboratoryReception } from './ModalLaboratoryReception';

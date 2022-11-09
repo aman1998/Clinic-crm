@@ -1,0 +1,1 @@
+export { ModalWaybill } from './ModalWaybill';

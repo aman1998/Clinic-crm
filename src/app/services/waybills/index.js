@@ -1,0 +1,1 @@
+export { waybillsService } from './waybills';

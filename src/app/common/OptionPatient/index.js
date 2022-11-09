@@ -1,0 +1,1 @@
+export { OptionPatient } from './OptionPatient';

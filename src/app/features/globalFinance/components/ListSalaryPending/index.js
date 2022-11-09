@@ -1,0 +1,1 @@
+export { ListSalaryPending } from './ListSalaryPending';

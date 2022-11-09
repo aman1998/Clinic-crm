@@ -1,0 +1,1 @@
+export { ListLaboratoryWarehouse } from './ListLaboratoryWarehouse';

@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+  kit-front:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        REACT_APP_HTTP_API_URL: http://65.21.50.83/api/v1/
+        REACT_APP_WEBSOCKET_API_URL: process.env.REACT_APP_WEBSOCKET_API_URL
+        REACT_APP_ENABLE_NOTIFICATION: 1
+        REACT_APP_ENABLE_CALL_NOTIFICATION: 1
+    ports:
+      - "3000:80"

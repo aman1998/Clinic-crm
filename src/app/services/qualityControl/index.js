@@ -1,0 +1,1 @@
+export { qualityControlService } from './qualityControl';

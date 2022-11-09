@@ -1,0 +1,1 @@
+export { laboratoryService } from './laboratory';

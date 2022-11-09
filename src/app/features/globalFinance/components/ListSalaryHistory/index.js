@@ -1,0 +1,1 @@
+export { ListSalaryHistory } from './ListSalaryHistory';

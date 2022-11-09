@@ -1,0 +1,48 @@
+image: docker:19.03.12
+services:
+  - name: docker:dind
+    alias: docker
+
+
+stages:
+  - build
+  - deploy_staging
+
+build:
+  stage: build
+  only:
+    - /deploy/
+    - /v\d+\.\d+\.\d+/
+  when: manual
+  script:
+    - export IMAGE_TAG=$(echo "$CI_COMMIT_TAG" | sed 's/^v*//')
+    - docker build --build-arg REACT_APP_HTTP_API_URL --build-arg REACT_APP_WEBSOCKET_API_URL --pull -t $CI_REGISTRY_IMAGE:latest .
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker push $CI_REGISTRY_IMAGE:latest
+    - |
+      case "$CI_COMMIT_TAG" in
+        v*) docker tag $CI_REGISTRY_IMAGE:latest $CI_REGISTRY_IMAGE:$IMAGE_TAG;
+            docker push $CI_REGISTRY_IMAGE:$IMAGE_TAG;;
+      esac
+
+deploy_staging:
+  stage: deploy_staging
+  image: alpine
+  environment:
+    name: staging
+    url: http://185.5.207.3
+  when: manual
+  only:
+    - /deploy/
+    - /v\d+\.\d+\.\d+/
+  dependencies:
+    - build
+  variables:
+    NOTY_MESSAGE: "✅ Eleven Stage Deployed ($CI_COMMIT_TAG): $CI_COMMIT_MESSAGE"
+    PROJECT_PATH: "/home/aibo-test-eleven"
+  script:
+    - apk --no-cache add curl sshpass openssh-client
+    - export SSHPASS="$USER_PASS"
+    - sshpass -e ssh -p $USER_PORT -o stricthostkeychecking=no $USER_HOST "docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY"
+    - sshpass -e ssh -p $USER_PORT -o stricthostkeychecking=no $USER_HOST "cd $PROJECT_PATH && docker-compose pull && docker-compose down && docker-compose up -d"
+    #- curl -s --max-time 10 -d "chat_id=$TELEGRAM_CHAT_ID&disable_web_page_preview=1&text=$NOTY_MESSAGE" "https://api.telegram.org/bot$TELEGRAM_TOKEN/sendMessage"

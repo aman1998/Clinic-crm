@@ -1,0 +1,12 @@
+export const CALL_TYPE_IN = 'IN';
+export const CALL_TYPE_OUT = 'OUT';
+
+export const CALL_STATUS_SUCCESS = 'SUCCESS';
+export const CALL_STATUS_MISSED = 'MISSED';
+export const CALL_STATUS_BUSY = 'BUSY';
+export const CALL_STATUS_NOT_AVAILABLE = 'NOTAVAILABLE';
+export const CALL_STATUS_NOT_ALLOWED = 'NOTALLOWED';
+export const CALL_STATUS_ERROR = 'ERROR';
+
+export const CALL_EVENT_ACCEPTED = 'ACCEPTED';
+export const CALL_EVENT_COMPLETED = 'COMPLETED';

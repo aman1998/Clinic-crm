@@ -1,0 +1,1 @@
+export { ModalCommonReception } from './ModalCommonReception';

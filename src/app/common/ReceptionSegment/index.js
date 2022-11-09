@@ -1,0 +1,1 @@
+export { ReceptionSegment } from './ReceptionSegment';

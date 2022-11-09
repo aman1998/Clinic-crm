@@ -1,0 +1,1 @@
+export { ModalAppointmentInfo } from './ModalAppointmentInfo';

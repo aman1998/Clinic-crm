@@ -1,0 +1,1 @@
+export { clinicService } from './clinic';

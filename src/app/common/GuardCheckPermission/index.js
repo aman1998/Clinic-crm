@@ -1,0 +1,1 @@
+export { GuardCheckPermission } from './GuardCheckPermission';

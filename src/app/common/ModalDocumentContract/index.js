@@ -1,0 +1,1 @@
+export { ModalDocumentContract } from './ModalDocumentContract';

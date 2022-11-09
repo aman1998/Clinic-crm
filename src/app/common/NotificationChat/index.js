@@ -1,0 +1,1 @@
+export { NotificationChat } from './NotificationChat';

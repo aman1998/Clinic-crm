@@ -1,0 +1,1 @@
+export { ModalPatientCallsHistory } from './ModalPatientCallsHistory';

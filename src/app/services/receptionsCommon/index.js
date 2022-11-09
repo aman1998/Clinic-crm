@@ -1,0 +1,1 @@
+export { receptionsCommonService } from './receptionsCommon';

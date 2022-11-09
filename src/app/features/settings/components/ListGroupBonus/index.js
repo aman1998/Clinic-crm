@@ -1,0 +1,1 @@
+export { ListGroupBonus } from './ListGroupBonus';

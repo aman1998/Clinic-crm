@@ -1,0 +1,1 @@
+export { statisticsCommonService } from './statisticsCommon';

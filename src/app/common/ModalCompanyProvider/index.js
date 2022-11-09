@@ -1,0 +1,1 @@
+export { ModalCompanyProvider } from './ModalCompanyProvider';

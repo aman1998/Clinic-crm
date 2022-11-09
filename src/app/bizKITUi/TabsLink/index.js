@@ -1,0 +1,1 @@
+export { TabsLink } from './TabsLink';

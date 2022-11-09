@@ -1,0 +1,1 @@
+export { useObserverElement } from './useObserverElement';

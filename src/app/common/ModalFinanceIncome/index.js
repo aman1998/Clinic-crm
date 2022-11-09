@@ -1,0 +1,1 @@
+export { ModalFinanceIncome } from './ModalFinanceIncome';

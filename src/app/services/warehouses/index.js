@@ -1,0 +1,1 @@
+export { warehousesService } from './warehouses';

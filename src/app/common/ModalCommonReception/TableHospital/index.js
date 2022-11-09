@@ -1,0 +1,1 @@
+export { TableHospital } from './TableHospital';

@@ -1,0 +1,1 @@
+export { FormFinanceIncome } from './FormFinanceIncome';

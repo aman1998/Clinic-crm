@@ -1,0 +1,1 @@
+export { ModalMoneyAccount } from './ModalMoneyAccount';

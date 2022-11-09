@@ -1,0 +1,1 @@
+export { FormFinanceExpense } from './FormFinanceExpense';

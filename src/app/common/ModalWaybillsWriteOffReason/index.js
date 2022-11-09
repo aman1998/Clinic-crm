@@ -1,0 +1,1 @@
+export { ModalWaybillsWriteOffReason } from './ModalWaybillsWriteOffReason';

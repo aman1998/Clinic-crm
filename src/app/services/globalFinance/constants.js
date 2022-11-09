@@ -1,0 +1,33 @@
+export const STATUS_PLAN = 'PLAN';
+export const STATUS_DONE = 'DONE';
+export const STATUS_CLOSED = 'CLOSED';
+export const STATUS_CONTROL = 'CONTROL';
+export const STATUS_REWORK = 'REWORK';
+export const STATUS_ACCEPTED = 'ACCEPTED';
+
+export const COMMENT_TYPE_INFO = 'INFO';
+export const COMMENT_TYPE_SUCCESS = 'SUCCESS';
+export const COMMENT_TYPE_WARNING = 'WARNING';
+export const COMMENT_TYPE_FAIL = 'FAIL';
+export const COMMENT_TYPE_FINANCE_FAIL = 'GLOBAL_FINANCE_FAIL';
+export const COMMENT_TYPE_FINANCE_SUCCESS = 'GLOBAL_FINANCE_SUCCESS';
+
+export const PERIOD_TYPE_DAY = 'day';
+export const PERIOD_TYPE_MONTH = 'month';
+export const PERIOD_TYPE_YEAR = 'year';
+export const PERIOD_TYPE_QUARTER = 'quarter';
+
+export const HISTORY_TYPE_FINANCE_PAYMENT_FAILURE = 'GLOBAL_FINANCE_PAYMENT_FAILURE';
+export const HISTORY_TYPE_RETURNED_FINANCE_PAYMENT = 'RETURNED_GLOBAL_FINANCE_PAYMENT';
+export const HISTORY_TYPE_APPROVED_FINANCE_PAYMENT = 'APPROVED_GLOBAL_FINANCE_PAYMENT';
+
+export const GROUP_TYPE_SPENDING = 0;
+export const GROUP_TYPE_COMING = 1;
+export const GROUP_TYPE_MOVING = 2;
+
+// @deprecated counterparty types is common for finance/globalFinance
+export const COUNTERPARTY_TYPE_PATIENT = 'PATIENT';
+export const COUNTERPARTY_TYPE_DOCTOR = 'DOCTOR';
+export const COUNTERPARTY_TYPE_PARTNER = 'PARTNER';
+export const COUNTERPARTY_TYPE_PERSONAL = 'PERSONAL';
+export const COUNTERPARTY_TYPE_MONEY_ACCOUNT = 'MONEY_ACCOUNT';

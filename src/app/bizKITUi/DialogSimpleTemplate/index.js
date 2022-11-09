@@ -1,0 +1,1 @@
+export { DialogSimpleTemplate } from './DialogSimpleTemplate';

@@ -1,0 +1,1 @@
+export { treatmentService } from './treatment';

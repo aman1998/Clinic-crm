@@ -1,0 +1,1 @@
+export { ModalProductCategory } from './ModalProductCategory';

@@ -1,0 +1,1 @@
+export { ModalJuridicalPerson } from './ModalJuridicalPerson';

@@ -1,0 +1,1 @@
+export { ClinicReceptionsStatistics } from './ClinicReceptionsStatistics';

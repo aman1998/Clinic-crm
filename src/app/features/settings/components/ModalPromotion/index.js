@@ -1,0 +1,1 @@
+export { ModalPromotion } from './ModalPromotion';
